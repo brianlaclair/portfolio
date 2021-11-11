@@ -1,0 +1,8 @@
+{
+	"name": 	"Wolfpack Island",
+	"thumb":	"wpi.gif",
+	"title":	"lead programmer",
+	"time":		"March 2021 - Current",
+	"shortDes": "an MMO in the vein of virtual worlds like Club Penguin. Built with NodeJS, MySQL, PHP, VueJS, and GameMaker Studio.",
+	"longDes":  ""
+}
