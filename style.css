@@ -3,6 +3,10 @@ html {
   overflow-x: 			hidden;
 }
 
+.noscroll {
+	overflow-y:			hidden;
+}
+
 img {
 	max-width:			100%;
 	max-height:			100%;
@@ -11,22 +15,30 @@ img {
 }
 
 .works {
-	border-radius:		0px;
-	object-fit: 		cover;
-	min-width:			200px;
-	height: 			100%;
-	box-shadow:			none;
+	border-radius:			0px;
+	object-fit: 			cover;
+	height: 				100%;
+	box-shadow:				none;
 }
 
 .worksmod {
-	
+	margin-right:			15%;
+}
+
+.overworks {
+	border-radius:			10px;
+	object-fit: 			cover;
+	height: 				100%;
+	transition-duration: 	0.5s;
+}
+
+.overworks:hover {
+	object-fit:				none;
 }
 
 p {
 	padding-top:		0px;
 	margin-block-start:	0px;
-	//text-shadow:		2px 2px 3px #FFF;
-	//font-weight: 		bold;
 }
 
 body {
@@ -61,14 +73,25 @@ h4 {
 	margin-bottom:		0px;
 }
 
+h5 {
+	font-size:			1em;
+	margin-bottom:		0px;
+	text-align:			right;
+}
+
 sub {
 	margin-top:			-30px;
 }
 
 a {
-	color:				#872218;
-	text-decoration:	none;
-	transition-duration: 0.5s;
+	color:					#872218;
+	text-decoration:		none;
+	transition-duration: 	0.5s;
+	cursor:					pointer;
+}
+
+.smallText {
+	font-size:				0.6em;
 }
 
 .grid-container {
@@ -86,9 +109,37 @@ a {
 }
 
 .grid-cont-sub {
+	grid-template-columns: 	minmax(200px, 1fr) minmax(500px, 1fr);
 	background-color:		#FFF;
 	padding:				0px;
+	grid-gap: 				0px;
 }
+
+.grid-overlay-container {
+	padding:				0px;
+    display: 				grid;
+    grid-template-columns: 	1fr 1fr 1fr;
+    grid-gap: 				20px;
+	font-size:				2vw;
+	color:					#AA4338;
+}
+
+.textright {
+	text-align:				right;
+}
+
+.overlay-left {
+	
+}
+
+.overlay-mid {
+	
+}
+
+.overlay-right {
+	
+}
+
 
 .title {
 	padding-left: 		15%;
@@ -103,6 +154,10 @@ a:hover {
 #main {
 	width:				100%;
 	margin:				auto;
+}
+
+.mainblur {
+	filter:				blur(10px);
 }
 
 #topsection {
@@ -135,10 +190,6 @@ a:hover {
 	padding-bottom:		5%;
 }
 
-.worksright {
-	padding:			5%;
-}
-
 .small {
 	color:				#872218;
 	font-size: 			20px;
@@ -151,26 +202,26 @@ a:hover {
 
 
 #nav {
-	overflow:			hidden;
-	padding:			20px;
-	margin:				auto;
-	text-align:			center;
-	color:				#000;
-	transition-duration: 0.5s;
-	width:				100%;
-	padding-left:		0px;
-	margin-left:		0px;
+	overflow:				hidden;
+	padding:				20px;
+	margin:					auto;
+	text-align:				center;
+	color:					#000;
+	transition-duration: 	0.5s;
+	width:					100%;
+	padding-left:			0px;
+	margin-left:			0px;
 }
 
 #overlay {
-	margin-top:			-10px;
-	position: 			fixed;
-	height:				100%;
-	width:				100%;
-	background-color:	#FFF;
-	z-index:			200;
-	overflow: 			hidden;
-	transition-duration: 10s;
+	margin-top:				-10px;
+	position: 				fixed;
+	height:					120%;
+	width:					100%;
+	background-color:		#FFF;
+	z-index:				200;
+	overflow: 				hidden;
+	transition-duration: 	10s;
 }
 
 .overlaycontent {
@@ -255,8 +306,13 @@ a:hover {
 	float:				right;
 }
 
+.showmore:hover {
+	cursor:				pointer;
+}
+
 .navbutton:hover {
 	border-bottom:		1px solid #F1A29A;
 	box-shadow: 		inset 0px -50px 0px 0px #F1A29A;
 	color:				#872218;
+	cursor:				pointer;
 }

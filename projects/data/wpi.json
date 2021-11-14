@@ -1,0 +1,12 @@
+{
+	"name": 	 "Wolfpack Island",
+	"thumb":	 "wpi1.jpg",
+	"image2":	 "wpi2.gif",
+	"image3":	 "wpi3.png",
+	"title":	 "lead programmer",
+	"time":		 "March 2021 - Current",
+	"shortDes":  "an MMO in the vein of virtual worlds like Club Penguin",
+	"section1":  "<h5>Platforms</h5><p class=textright><b class=smallText>Android, iOS, PC, Mac</b></p><hr><h5>Responsibilities</h5><ul class=smallText><li>Implement, test, and deploy new game features and moderation tools throughout entire stack</li><li>Audit, assess, and resolve security concerns</li><li>Ensure successful cross-platform builds</li><li>Deploy client software to Apple App Stores, Google Play, and Steam</li></ul>",
+	"section2":  "testing section 2"
+}
+
