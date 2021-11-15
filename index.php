@@ -1,26 +1,19 @@
 <HTML>
 <HEAD>
+<!-- Hey! Truly overjoyed that you're taking the time to look at my portfolio's source! I wrote it myself and all that. It uses Javascript and PHP to automatically load content
+and make it easy for me to update things here. If you want, I have the entire source on my github, feel free to use it for your own website! -->
 <link rel="stylesheet" href="style.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://kit.fontawesome.com/025c4715ea.js" crossorigin="anonymous"></script>
 </HEAD>
 <BODY>
+
 <DIV id="overlay" class="hiddenstart">
 <a onclick="closeModal()" id="up" class="navbutton cornerfix">X</a>
 <div class="overlaycontent">
-
-<div class="grid-overlay-container">
-<div class="overlay-left"><img id="overlayimage-1" src="" class="overworks"/></div>
-<div class="overlay-mid"><img id="overlayimage-2" src="" class="overworks"/></div>
-<div class="overlay-right"><img id="overlayimage-3" src="" class="overworks"/></div>
-<div class="overlay-left"><h2 id="overlayname"></h2><b><sub id="overlaytitle"></sub></b><br><sub id="overlaytime"></sub></div>
-<div class="overlay-mid small" id="overlaysect1"></div>
-<div class="overlay-right small" id="overlaysect2"></div>
+<div id="overlayimportedcontent" class="grid-overlay-container">
+<!-- Content gets imported here on load -->
 </div>
-
-<h2 id="overlayname"></h2>
-<h2 id="overlaytitle"></h2>
-<h2 id="overlaytime"></h2>
-
-
 </div>
 </div>
 
@@ -68,13 +61,25 @@
 <div class="title">
 <h2>contact me</h2>
 </div>
-<div class="grid-container">
-<div class="left">
-<img src="assets/me.jpg"/>
+<div class="grid-container grid-single">
+<div class="grid-overlay-container four">
+<div class="overlay-left social">
+<h2><a href="https://twitter.com/brianlaclair" target="_blank" class="contact"><i class="fa-brands fa-twitter"></i></a></h2>
 </div>
-<div class="right">
+<div class="overlay-mid social">
+<h2><a onclick="emailToggle()" class="contact"><i class="fa-solid fa-at"></i></a></h2>
+</div>
+<div class="overlay-mid social">
+<h2><a class="contact"><i class="fab fa-discord"></i></a></h2>
+</div>
+<div class="overlay-right social">
+<h2><a href="" class="contact"><i class="fa-brands fa-github"></i></a></h2>
+</div>
+</div>
+<div id="contact-form" class="email">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor, enim sed facilisis ultrices, purus justo condimentum lectus, ut imperdiet sapien nisl quis lorem. Donec tincidunt lectus sit amet leo volutpat, tincidunt pellentesque nisi feugiat. Etiam sapien sem, rutrum interdum blandit at, cursus non ex. Aliquam eros velit, ornare in placerat vel, pulvinar nec dui. Suspendisse pharetra rutrum turpis et euismod. Suspendisse euismod finibus justo, sit amet sagittis felis molestie ut. Morbi et ex eros. Pellentesque quis tincidunt magna. Suspendisse non tellus nec odio dapibus elementum ut nec lorem. Integer quam sapien, maximus vel faucibus non, ornare a nibh.
+
+Sed quis iaculis lectus. Sed felis erat, dictum sed mattis sodales, malesuada viverra tortor. Vivamus a faucibus est, eu ultrices magna. In sit amet vestibulum lectus, vel ultrices neque. Aliquam erat volutpat. Suspendisse eget quam purus. Curabitur sollicitudin at purus in aliquam. Aenean condimentum pretium sapien eu pellentesque. Pellentesque vitae efficitur orci. Maecenas faucibus elementum aliquam. Sed varius cursus turpis, vitae finibus leo dictum at. Duis vel sem nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam eu nunc in sem consequat commodo.</div>
 <p>Brian discovered his passion for programming at a young age with an old computer and a copy of QBASIC</p><p>Over 15 years later, he works daily designing and developing websites, games, mobile apps, and open-source libraries in a multitude of languages</p><p>When he's not coding, you can find Brian spending time with his friends at local concerts or hanging out with his dogs, cat, or guinea pigs</p>
-</div>
 </div>
 </div>
 
@@ -101,7 +106,11 @@ var overlaySect1    = document.getElementById("overlaysect1");
 var overlaySect2    = document.getElementById("overlaysect2");
 
 // Get id of the main content section
-var mainContent		= document.getElementById("main")
+var mainContent		= document.getElementById("main");
+
+// Setup of email form magic
+var emailForm 		= document.getElementById("contact-form");
+var	emailToggled	= false;
 
 // Get the offset position of the navbar
 var sticky 		  	= header.offsetTop;
@@ -122,7 +131,26 @@ function nav_stick() {
   
 }
 
-function openModal(name, title, time, img1, img2, img3, section1, section2) {
+function loadOverlayContent(id) {
+	$.ajax("projects/project.php?id=" + id, {
+    success: function(response) {
+      $("#overlayimportedcontent").html(response);
+    }
+  }); 
+}
+
+function emailToggle() {
+	if (emailToggled) {
+		emailForm.style.height = 0;
+		emailToggled = false;
+	} else {
+		emailForm.style.height = 300;
+		emailToggled = true;
+	}
+}
+
+function openModal(id) {
+	
 	// Prevent scrolling
 	root.className = 'noscroll';
 	
@@ -135,15 +163,9 @@ function openModal(name, title, time, img1, img2, img3, section1, section2) {
 	overlay.classList.remove("hideoverlay");
 	overlay.classList.remove("hiddenstart");
 	
-	// Update the contents of the overlay
-	overlayName.textContent 	= name;
-	overlayTitle.textContent	= title;
-	overlayTime.textContent 	= time;
-	overlaySect1.innerHTML		= section1;
-	overlaySect2.textContent 	= section2;
-	overlayImage1.src			= "assets/" + img1;
-	overlayImage2.src			= "assets/" + img2;
-	overlayImage3.src			= "assets/" + img3;
+	//Load in the content
+	loadOverlayContent(id);
+	
 }
 
 function closeModal() {

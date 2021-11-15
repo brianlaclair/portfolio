@@ -104,6 +104,16 @@ a {
 	color:					#FFF;
 }
 
+.grid-single {
+	grid-template-columns:	1fr;
+	color:					#FFF;
+}
+
+.social {
+	color:					#FFF;
+	text-align:				center;
+}
+
 .grid-cont-tight {
 	grid-gap:				0vw;
 }
@@ -122,6 +132,10 @@ a {
     grid-gap: 				20px;
 	font-size:				2vw;
 	color:					#AA4338;
+}
+
+.four {
+	grid-template-columns:	1fr 1fr 1fr 1fr;
 }
 
 .textright {
@@ -231,12 +245,27 @@ a:hover {
 	top: 				50%;
 	-webkit-transform: 	translate(-50%, -50%);
 	transform: 			translate(-50%, -50%);
+	width:				90%;
 }
 
 .hideoverlay {
 	//display: 			none;
 	animation: 			fadeout 0.3s linear;
 	opacity: 			0%;
+}
+
+.contact {
+	font-size:			4vw;
+	color:				#FFF;
+	border-bottom:		1px solid #F1A29A;
+	padding:			0px 20px 0px 20px;
+}
+
+.contact:hover {
+	border-bottom:		1px solid #F1A29A;
+	box-shadow: 		inset 0px -4.5vw 0px 0px #F1A29A;
+	text-shadow:		4px 4px #000;
+	color:				#326da8;
 }
 
 .hiddenstart {
@@ -315,4 +344,13 @@ a:hover {
 	box-shadow: 		inset 0px -50px 0px 0px #F1A29A;
 	color:				#872218;
 	cursor:				pointer;
+}
+
+.email {
+	height: 				0px;
+	width:					100%;
+	background-color:		#fff;
+	color:					#000;
+	overflow:				hidden;
+	transition-duration:	0.5s;
 }

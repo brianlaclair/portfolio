@@ -1,11 +1,10 @@
 {
-	"current": {
+	"Current Projects": {
 		"0": "wpi",
-		"1": "sdc",
-		"2": "gmtug"
+		"1": "sdc"
 	},
 	"2021": {
-		"0": "idyll",
-		"1": "vsws"
+		"0": "wpi",
+		"1": "wpi"
 	}
 }

@@ -1,13 +1,11 @@
 {
 	"name": 	"Studio Digital Caffeine",
-	"thumb":	"wpi.jpg",
-	"image2":	"",
-	"image3":	"",
+	"thumb":	"sdc1.png",
+	"image2":	"sdc2.png",
+	"image3":	"sdc3.png",
 	"title":	"lead programmer, designer",
 	"time":		"April 2021 - Current",
 	"shortDes": "Various projects ",
-	"longDes":	"",
-	"duties": 	"",
-	"accomplishments": "",
-	"links": 	"",
+	"section1":  "<h5>Platforms</h5><p class=textright><b class=smallText>Android, iOS, PC, Mac</b></p><hr><h5>Responsibilities</h5><ul class=smallText><li>Implement, test, and deploy new game features and moderation tools throughout entire stack</li><li>Audit, assess, and resolve security concerns</li><li>Ensure successful cross-platform builds</li><li>Deploy client software to Apple App Stores, Google Play, and Steam</li></ul>",
+	"section2":  "testing section 2"
 }
