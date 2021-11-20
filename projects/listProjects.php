@@ -11,29 +11,29 @@ $array_map = array_keys($dirInfo);
 
 // Loop through the first dimension of the directory
 for ($period = 0; $period < count($dirInfo); $period++) {
-	
+
 	$thisKey = $array_map[$period];
-	
+
 	// Loop through the nested dimesion and load results
 	for ($current = 0; $current < count($dirInfo[$thisKey]); $current++) {
-		
+
 		$projectId 		= $dirInfo[$thisKey][$current];
 		$projectFile	= "projects/data/{$projectId}.json";
 		$projectInfo	= json_decode(file_get_contents($projectFile), true);
-		
+
 		// We have the project's JSON file loaded, so let's save the data to some temporary variables for easy reference
-		$thumb 			= $projectInfo['thumb'];
+		$thumb 		= $projectInfo['thumb'];
 		$name			= $projectInfo['name'];
-		$title			= $projectInfo['title'];
+		$title		= $projectInfo['title'];
 		$time			= $projectInfo['time'];
 		$desc			= $projectInfo['shortDes'];
-		
+
 		// Output the HTML for the row
 		$rowTitle 		= "";
 		if ($current == 0) {
 			$rowTitle = "<h3>{$thisKey}</h3>";
 		}
-		
+
 		echo "<div class=\"left\">{$rowTitle}</div>
 		<div class=\"right\">
 		<div class=\"grid-container grid-cont-sub\">
@@ -45,7 +45,7 @@ for ($period = 0; $period < count($dirInfo); $period++) {
 		</div>
 		</div>
 		";
-		
+
 	}
 }
 ?>

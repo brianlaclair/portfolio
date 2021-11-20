@@ -5,7 +5,13 @@
 	"image3":	"sdc3.png",
 	"title":	"lead programmer, designer",
 	"time":		"April 2021 - Current",
-	"shortDes": "Various projects ",
-	"section1":  "<h5>Platforms</h5><p class=textright><b class=smallText>Android, iOS, PC, Mac</b></p><hr><h5>Responsibilities</h5><ul class=smallText><li>Implement, test, and deploy new game features and moderation tools throughout entire stack</li><li>Audit, assess, and resolve security concerns</li><li>Ensure successful cross-platform builds</li><li>Deploy client software to Apple App Stores, Google Play, and Steam</li></ul>",
-	"section2":  "testing section 2"
+	"shortDes": "Various projects for all platforms, focusing on Console and Mobile games",
+	"section1":  "<p>I joined the SDC team during the launch of <a href='https://www.nintendo.com/games/detail/chained-switch/'>Chained</a> to start work on the next full game from the studio, which is a cross-platform multiplayer card game. Since them we've begun work on an additional mobile title.</p><p>Both games we're working on will be releasing in 2022, and I've already learned and developed quite a bit in regards to crossplay multiplayer systems for these projects.</p>",
+	"section2":  {
+					"Platforms":		"Nintendo Switch, Xbox, PlayStation 4 + 5, Windows, Mac, Android, iOS",
+					"Technologies": 	"PHP, MySQL, GameMaker Studio 2",
+					"Responsibilities": "<ul><li>Collaboratively Design, Prototype, and Develop game ideas</li><li>Build backend systems and client implementations for cross-platform multiplayer experiences based on platform development documents</li><li>Ensure successful cross-platform builds</li></ul>",
+					"Links":			"<a href='https://store.steampowered.com/app/1031970/Wolfpack_Island/'>Studio Website</a> / <a href='https://play.google.com/store/apps/details?id=com.zeptarsltd.wolfpackisland'>Twitter</a>"
+				 }
 }
+

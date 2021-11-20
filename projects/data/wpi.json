@@ -6,6 +6,12 @@
 	"title":	 "lead programmer",
 	"time":		 "March 2021 - Current",
 	"shortDes":  "an MMO in the vein of virtual worlds like Club Penguin",
-	"section1":  "<h5>Platforms</h5><p class=textright><b class=smallText>Android, iOS, PC, Mac</b></p><hr><h5>Responsibilities</h5><ul class=smallText><li>Implement, test, and deploy new game features and moderation tools throughout entire stack</li><li>Audit, assess, and resolve security concerns</li><li>Ensure successful cross-platform builds</li><li>Deploy client software to Apple App Stores, Google Play, and Steam</li></ul>",
-	"section2":  "testing section 2"
+	"section1":  "<p>Wolfpack Island is a virtual world similar to games like Club Penguin. Through this project I've learned a lot about NodeJS, as well as developing some features I'm really proud of.</p><p>When I began, many assets like clothing and backgrounds were baked directly into the game binaries - I spent a week pulling apart the already huge codebase so that we could deliver assets for clothing and areas on game start, and whenever there were new items available while users are playing. This allows us to make itterative modifications to the look and feel of the game without needing to distribute new binaries every week. Doing this also substantially reduced the size of the app binaries, and improved performance significantly on low-end devices by optimizing texture storage.</p><p>On top of many features I've worked on for the game, working on Wolfpack Island has given me solid understanding and knowledge of distribution for Steam, Google Play, and the Apple App Store (Mac App Store included). I've streamlined our build toolchain and distribution toolchain to make sending out updates and play tests a breeze saving many hours of headaches each time we need to make a binary release.</p>",
+	"section2":  {
+					"Developer":		"Zeptars Ltd.",
+					"Platforms":		"Windows, macOS, Android, iOS",
+					"Technologies": 	"NodeJS, VueJS, PHP, MySQL, and GameMaker Studio 2",
+					"Responsibilities": "<ul><li>Implement, test, and deploy new game features and moderation tools throughout entire stack</li><li>Design and develop content creation tools, and systems for rapid deployment without client software updates</li><li>Audit, assess, and resolve security concerns</li><li>Ensure successful cross-platform builds</li><li>Deploy client software to Apple App Stores, Google Play, and Steam</li></ul>",
+					"Links":			"<a href='https://store.steampowered.com/app/1031970/Wolfpack_Island/'>Steam</a> / <a href='https://play.google.com/store/apps/details?id=com.zeptarsltd.wolfpackisland'>Google Play</a> / <a href='https://apps.apple.com/ao/app/wolfpack-island/id1453048068'>App Store</a> / <a href='https://twitter.com/wolfpackisland'>Twitter</a>"
+				 }
 }

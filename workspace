@@ -1,0 +1,35 @@
+<NotepadPlus>
+    <Project name="Brian LaClair">
+        <Folder name="assets">
+            <File name="assets\bird.svg" />
+            <File name="assets\email.svg" />
+            <File name="assets\github.svg" />
+            <File name="assets\me.jpg" />
+            <File name="assets\sdc1.png" />
+            <File name="assets\sdc2.png" />
+            <File name="assets\sdc3.png" />
+            <File name="assets\wpi1.jpg" />
+            <File name="assets\wpi2.gif" />
+            <File name="assets\wpi3.png" />
+        </Folder>
+        <Folder name="includes">
+            <File name="includes\contactform.html" />
+        </Folder>
+        <Folder name="projects">
+            <Folder name="data">
+                <File name="projects\data\sdc.json" />
+                <File name="projects\data\wpi.json" />
+                <File name="projects\data\gmt.json" />
+            </Folder>
+            <File name="projects\directory.json" />
+            <File name="projects\jsontext.php" />
+            <File name="projects\listProjects.php" />
+            <File name="projects\project.php" />
+        </Folder>
+        <File name=".gitattributes" />
+        <File name="contact.php" />
+        <File name="index.php" />
+        <File name="main.js" />
+        <File name="style.css" />
+    </Project>
+</NotepadPlus>
