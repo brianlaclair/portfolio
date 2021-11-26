@@ -31,9 +31,9 @@ if(is_array($proj_info['section2'])) {
   $section2 .= "</div>";
 }
 
-echo "<div class=\"overlay-left\"><img src=\"assets/{$image1}\" class=\"overworks\"/></div>
-<div class=\"overlay-mid\"><img src=\"assets/{$image2}\" class=\"overworks\"/></div>
-<div class=\"overlay-right\"><img src=\"assets/{$image3}\" class=\"overworks\"/></div>
+echo "<div class=\"overlay-left overlay-img\" onClick=\"openImage('assets/{$image1}')\"><img src=\"assets/{$image1}\" class=\"overworks\"/></div>
+<div class=\"overlay-mid overlay-img\" onClick=\"openImage('assets/{$image2}')\"><img src=\"assets/{$image2}\" class=\"overworks\"/></div>
+<div class=\"overlay-right overlay-img\" onClick=\"openImage('assets/{$image3}')\"><img src=\"assets/{$image3}\" class=\"overworks\"/></div>
 <div class=\"overlay-left\"><h2 class=\"overlayname\">{$name}</h2><b><sub id=\"overlaytitle\">{$title}</sub></b><br><sub id=\"overlaytime\">{$time}</sub></div>
 <div class=\"overlay-mid fit textMid\" id=\"overlaysect1\">{$section1}</div>
 <div class=\"overlay-right fit\" id=\"overlaysect2\">{$section2}</div>";

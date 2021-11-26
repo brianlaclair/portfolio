@@ -9,8 +9,16 @@
 </HEAD>
 <BODY>
 
+<DIV id="imagePop" class="imageoverlay hideimage">
+<a onclick="closeImage()" class="navbutton cornerfix white">X</a>
+<div onclick="closeImage()" id="imageimportedcontent">
+<!-- Content gets imported here on load -->
+</div>
+</div>
+
+
 <DIV id="overlay" class="hiddenstart">
-<a onclick="closeModal()" id="up" class="navbutton cornerfix">X</a>
+<a onclick="closeModal()" id="up" class="navbutton cornerfix black">X</a>
 <div class="overlaycontent">
 <div id="overlayimportedcontent" class="grid-overlay-container">
 <!-- Content gets imported here on load -->
@@ -40,7 +48,7 @@
 <img src="assets/me.jpg" class="portrait"/>
 </div>
 <div class="right">
-<p>Brian discovered his passion for programming at a young age with an old computer and a copy of QBASIC</p><p>Over 15 years later, he works daily designing and developing websites, games, mobile apps, and open-source libraries in a multitude of languages</p><p>When he's not coding, you can find Brian spending time with his friends at local concerts or hanging out with his dogs, cat, and guinea pigs</p>
+<?php echo file_get_contents("includes/aboutme.html"); ?>
 </div>
 </div>
 </div>
@@ -62,7 +70,7 @@
 <h2>contact me</h2>
 </div>
 <div class="grid-container grid-single backdrop">
-<p>Brian discovered his passion for programming at a young age with an old computer and a copy of QBASIC</p><p>Over 15 years later, he works daily designing and developing websites, games, mobile apps, and open-source libraries in a multitude of languages</p><p>When he's not coding, you can find Brian spending time with his friends at local concerts or hanging out with his dogs, cat, or guinea pigs</p>
+<?php echo file_get_contents("includes/contacttext.html"); ?>
 <div class="grid-overlay-container four">
 <div class="overlay-left social">
 <h2><a href="https://twitter.com/brianlaclair" target="_blank" class="contact"><i class="fa-brands fa-twitter"></i></a></h2>

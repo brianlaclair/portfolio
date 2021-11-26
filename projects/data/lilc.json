@@ -1,0 +1,15 @@
+{
+	"name": 	 "Little Cosmonaut",
+	"thumb":	 "lilc1.png",
+	"image2":	 "lilc2.gif",
+	"image3":	 "lilc3.gif",
+	"title":	 "Programmer, Designer",
+	"time":		 "October 2021",
+	"shortDes":  "a 48-hour jam game, made with GameMaker Studio 2",
+	"section1":  "<p>This was a very light jam game with two of my friends - usually we go all out on these but all had a busy weekend planned and wanted to take on a project that had a reasonable scope.</p><p>The theme we were given was \"Discovery\" which we utilized by putting the game in the perspective of a child exploring the world around them - finding new objects - and building a spaceship to discover the universe.</p><p>Some of my favorite things I made for this are the mechanics for finding and assembling the rocket pieces, as well as some really neat persistent interactions between areas of the game and the camera handling for the game.</p><p>We essentially have one massive playarea that the camera gets locked into subsections of - when you pass between walls, the camera neatly follows the player to the next area. We utilized this to great extent at the end of the game which requires you to traverse between the three playareas from high up in the room.</p><p>I absolutely love that effect, and our work on polishing pieces like that got us high marks in the jam ratings</p>",
+	"section2":  {
+					"Platforms":		"Windows",
+					"Technologies": 	"GameMaker Studio 2",
+					"Links":			"<a href='https://gm48.net/game/1971/little-cosmonaut'>game jam page</a>"
+				 }
+}

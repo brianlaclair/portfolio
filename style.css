@@ -70,6 +70,13 @@ img {
   height:              			auto;
 }
 
+.center-text {
+	align-content:				center;
+	margin-left:				15%;
+	margin-right:				15%;
+	margin-top:					20px;
+}
+
 p {
 	padding-top:				0px;
 	margin-block-start:			0px;
@@ -147,6 +154,10 @@ a {
 	grid-gap:					0vw;
 }
 
+.overlay-img:hover {
+	cursor:						pointer;
+}
+
 .grid-cont-overlay {
   background-color:       		none;
   grid-template-columns: 		0.1fr 1fr;
@@ -213,8 +224,8 @@ a:hover {
 }
 
 #topsection {
-	width: 						100%;
-	height: 					100%;
+	width: 						100vw;
+	height: 					100vh;
 	margin-bottom:				25%;
 }
 
@@ -229,6 +240,11 @@ a:hover {
 	padding:					20%;
 	padding-top:				5%;
 	padding-bottom:				5%;
+}
+
+.smallest {
+	font-size:					1em;
+	font-style: 				italic;
 }
 
 .nopad {
@@ -247,6 +263,15 @@ ul {
 
 .worksleft {
 	padding:					5%;
+	transition-duration:		0.3s;
+}
+
+.hoverwork {
+	transition-duration:		0.3s;
+}
+
+.hoverwork:hover {
+	box-shadow:					0px 0px 20px #000;
 }
 
 .right {
@@ -281,7 +306,7 @@ ul {
 	padding:					20px;
 	text-align:			   		center;
 	color:						#000;
-	transition-duration: 		0.5s;
+	//transition-duration: 		0.5s;
 	width:						100vw;
 	padding-left:				0px;
 	padding-right:        		0px;
@@ -291,6 +316,43 @@ ul {
 .navMod {
 	padding-top:				77px;
 }
+
+#imagePop {
+	top:				        0px;
+	position: 			     	fixed;
+	height:					    100vh;
+	width:					    100vw;
+	z-index:				   	210;
+	overflow: 				   	hidden;
+	transition-duration: 		0.5s;
+	align-content:				center;
+}
+
+#imageimportedcontent {
+	background-color: #000;
+}
+
+.hideimage {
+	display:					none;
+}
+
+.black {
+	color:						#000;
+}
+
+.white {
+	color:						#FFF;
+}
+
+.fullimage {
+	height: 					100vh;
+	object-fit:					scale-down;
+}
+
+.showimage {
+	display:					block;
+}
+
 
 #overlay {
 	top:				        0px;
@@ -351,7 +413,6 @@ ul {
 	position: 					fixed;
 	float: 						right;
 	margin-right:				20px;
-	color:						#000;
 	z-index:					201;
 }
 
@@ -407,7 +468,6 @@ ul {
 .email {
 	height: 					0px;
 	width:						100%;
-	//background-color:			#fff;
 	color:						#000;
 	overflow:					hidden;
 	transition-duration:		0.5s;

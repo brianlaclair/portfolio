@@ -27,6 +27,7 @@ for ($period = 0; $period < count($dirInfo); $period++) {
 		$title		= $projectInfo['title'];
 		$time			= $projectInfo['time'];
 		$desc			= $projectInfo['shortDes'];
+		$tech			= $projectInfo['section2']['Technologies'];
 
 		// Output the HTML for the row
 		$rowTitle 		= "";
@@ -36,11 +37,11 @@ for ($period = 0; $period < count($dirInfo); $period++) {
 
 		echo "<div class=\"left\">{$rowTitle}</div>
 		<div class=\"right\">
-		<div class=\"grid-container grid-cont-sub\">
+		<div class=\"grid-container grid-cont-sub hoverwork\">
 		<div class=\"worksleft\">
 		<img src=\"assets/{$thumb}\" class=\"works\"/></div><div class=\"right small worksmod\">
 		<h4>{$name}</h4>
-		<sub><b>{$title}</b></sub><br><sub>{$time}</sub><br><br><p>{$desc}</p> <a onclick=\"openModal('{$projectId}')\" class=\"navbutton showmore\">Learn More...</a>
+		<sub><b>{$title}</b></sub><br><sub>{$time}</sub><br><sub class='smallest'>{$tech}</sub><br><br><p>{$desc}</p> <a onclick=\"openModal('{$projectId}')\" class=\"navbutton showmore\">Learn More...</a>
 		</div>
 		</div>
 		</div>

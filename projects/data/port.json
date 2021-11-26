@@ -5,7 +5,7 @@
 	"image3":	 "port3.png",
 	"title":	 "Solo Developer",
 	"time":		 "November 2021",
-	"shortDes":  "This website! Built from the ground up to easily add and remove content as needed with a reactive design",
+	"shortDes":  "This website! Built from the ground up to easily add and remove content as needed with a responsive design",
 	"section1":  "<p>I built this website to showcase my works!</p><p>It utilizes JavaScript and PHP, as well as some neat CSS, to display everything in a way that I envisioned. Projects are added as a JSON file to keep things lightweight (why use a full database when you don't need to?) and very flexible.</p><p>I decided to make this sites whole source available via GitHub, so check out the link to the right if you want to use this same template for your site!</p>",
 	"section2":  {
 					"Platforms":		"Web",

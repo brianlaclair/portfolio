@@ -17,6 +17,9 @@ var overlayImage3   = document.getElementById("overlayimage-3");
 var overlaySect1    = document.getElementById("overlaysect1");
 var overlaySect2    = document.getElementById("overlaysect2");
 
+// Setup for image
+var imageShower     = document.getElementById("imagePop");
+
 // Get id of the main content section
 var mainContent		= document.getElementById("main");
 
@@ -126,4 +129,30 @@ function closeModal() {
 	mainContent.classList.remove("mainblur");
 	overlay.classList.remove("showoverlay");
 	overlay.classList.add("hideoverlay");
+}
+
+// I added this image show-er at the end of writing this - it should be combined with the Modal functions in the future
+function loadImage(url) {
+	$.ajax(url, {
+    success: function(response) {
+      $("imageimportedcontent").html(response);
+    }
+  });
+}
+
+function openImage(url) {
+    
+	// Show the image
+	imageShower.classList.add("showimage");
+    imageShower.classList.remove("hideimage");
+
+    document.getElementById('imageimportedcontent').innerHTML = '<img class="fullimage" src="' + url + '" />';
+	//Load in the content
+	//loadImage(url);
+
+}
+
+function closeImage() {
+	imageShower.classList.add("hideimage");
+    imageShower.classList.remove("showimage");
 }
