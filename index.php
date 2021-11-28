@@ -2,6 +2,14 @@
 <HTML>
 <!-- Hey! Truly overjoyed that you're taking the time to look at my portfolio's source! I wrote it myself and all that. It uses Javascript and PHP to automatically load content and make it easy for me to update things here. If you want, I have the entire source on my github, feel free to use it for your own website! -->
 <HEAD>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
 <link rel="stylesheet" href="style.css">
 
 <script src="//code.jquery.com/jquery-3.6.0.js"></script>
