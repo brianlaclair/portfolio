@@ -1,0 +1,15 @@
+{
+	"name": 	 "Idyll",
+	"thumb":	 "idyll1.png",
+	"image2":	 "idyll2.gif",
+	"image3":	 "idyll3.gif",
+	"title":	 "Solo Developer",
+	"time":		 "March 2021",
+	"shortDes":  "a persistent massive multiplayer online game set on an exceedingly small island",
+	"section1":  "<p>While playing with online functionality for a few projects, I had the idea of an incredibly tiny world that could allow for a ton of players to show up at anytime - that's how Idyll was born.</p><p>Idyll was (is?) a virtual world that allows players to destroy objects, get resources, build new things, and repeat.</p><p>It can be played alone, or with friends, but anytime someone jumps into Idyll they are on the same island with the same amount of resources - the server I wrote for this allows for a finite number of rocks, pieces of wood, etc, meaning that at some point, you will have to break things to make new things.</p>",
+	"section2":  {
+					"Platforms":		"Windows, Linux",
+					"Technologies": 	"PHP, MySQL, GameMaker Studio 2",
+					"Links":			"<a href='https://brianlaclair.itch.io/idyll'>itch.io page</a> / <a href='https://www.actugaming.net/idyll-presentation-mmo-gratuit-399635/'>ActuGaming Article</a>"
+				 }
+}

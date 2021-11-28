@@ -1,0 +1,15 @@
+{
+	"name": 	 "Sign-In Data Collection System",
+	"thumb":	 "tss1.png",
+	"image2":	 "tss2.png",
+	"image3":	 "tss3.png",
+	"title":	 "Solo Developer",
+	"time":		 "May 2015",
+	"shortDes":  "a sign-in platform for teen centers and schools",
+	"section1":  "<p>This project was brought to me as the Town of Bristol realized how powerful proper data collection could be in obtaining tax and grant funding for their teen center.</p><p>Designed and developed over the course of several weeks, this system has been serving them since 2015 - it's recorded over 50,000 visits to the town's teen center, with over 500 unique users.</p><p>The data it collects has been utilized to obtain over $60,000 in grant funding for the program.</p>",
+	"section2":  {
+					"Client":			"Town of Bristol, Vermont",
+					"Platforms":		"Web",
+					"Technologies": 	"PHP, MySQL"
+				 }
+}

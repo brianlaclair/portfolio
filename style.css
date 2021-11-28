@@ -253,7 +253,12 @@ a:hover {
 
 .fit {
 	color:						#872218;
-	font-size:					1vh;
+	font-size:					calc(8px + .4vw);
+}
+
+.fit-profile {
+	color: 						#fff;
+	font-size: 					calc(8px + 1vh);
 }
 
 ul {
@@ -266,8 +271,17 @@ ul {
 	transition-duration:		0.3s;
 }
 
+.works-pad {
+	padding-bottom:				5%;
+}
+
 .hoverwork {
 	transition-duration:		0.3s;
+}
+
+.whitebox {
+	background-color:			#fff48e;
+	padding:					10px;
 }
 
 .hoverwork:hover {
@@ -278,7 +292,7 @@ ul {
 	padding:					20%;
 	padding-left:				5%;
 	padding-top:				5%;
-	padding-bottom:				5%;
+	padding-bottom:				0%;
 }
 
 .small {

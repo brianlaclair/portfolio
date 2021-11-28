@@ -1,0 +1,15 @@
+{
+	"name": 	 "GMHue",
+	"thumb":	 "hue1.png",
+	"image2":	 "hue2.png",
+	"image3":	 "hue3.png",
+	"title":	 "Solo Developer",
+	"time":		 "February 2021",
+	"shortDes":  "an easy to use library that enables connectivity for GameMaker Studio 2 games to Philips® Hue smart lights",
+	"section1":  "<p>GMHue is a small project that allows GameMaker Studio 2 games to leverage connectivity to Philips Hue smart lights.</p><p>It allows your game to dynamically set the color, brightness, and on / off state of lights that the user gives you control over to create a more ambient experience for your games.</p><p>In my mind, the best use for this would be when you're showcasing a game at a convention or meet-up to really excite visitors about the game they are playing by setting a dynamic mood for the demo.</p>",
+	"section2":  {
+					"Platforms":		"Windows, Mac, Linux, Mobile",
+					"Technologies": 	"GameMaker Studio 2",
+					"Links":			"<a href='https://marketplace.yoyogames.com/assets/9747/gmhue'>GMHue on the Yoyogames Marketplace</a>"
+				 }
+}

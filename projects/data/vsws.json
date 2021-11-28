@@ -1,0 +1,15 @@
+{
+	"name": 	 "Very Simple Web Server",
+	"thumb":	 "vsws1.png",
+	"image2":	 "vsws2.png",
+	"image3":	 "vsws3.png",
+	"title":	 "Solo Developer",
+	"time":		 "May 2020",
+	"shortDes":  "an HTTP1.1 compliant web server made in native GameMaker Studio 2",
+	"section1":  "<p>What's that quote? Ah yes, \"with great power comes great responsibility\"... or was it \"just because you can, doesn't mean you should\"?</p><p>Anyway, VSWS is a web server software that I made with GameMaker Studio 2 - it is HTTP1.1 compliant, and has an extension to support co-processors like PHP, Python, or Perl when desired.</p><p>To complete this process I had to read a TON of documentation and RFC's on HTTP which helped me gain a deep understanding of the protocol and what's going on when you ask to visit a website.</p><p>Currently, there are about 30 different sites around the internet being hosted with VSWS.</p>",
+	"section2":  {
+					"Platforms":		"Windows, Mac, Linux, Mobile",
+					"Technologies": 	"GameMaker Studio 2",
+					"Links":			"<a href='http://verysimplewebserver.com'>VSWS website (hosted on VSWS)</a> / <a href='https://github.com/VSWS/Very-Simple-Web-Server'>GitHub</a>"
+				 }
+}

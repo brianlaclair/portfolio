@@ -1,0 +1,14 @@
+{
+	"name": 	 "WillHost.It",
+	"thumb":	 "whi1.png",
+	"image2":	 "whi2.png",
+	"image3":	 "whi2.png",
+	"title":	 "Solo Developer",
+	"time":		 "February 2011",
+	"shortDes":  "a file hosting site for anyone on the internet to use",
+	"section1":  "<p>WillHost.It was a free file hosting website - designed at a time where it was challenging to find good ways to host .exe files, I ran this project for about a year. As this was while I was in highschool, I didn't have any funding to keep up with changing technologies of the time and this project moved to the backburner.</p><p>Still, the site was heavily utilized - it averaged at 5,000 file uploads per day and was shared on the front page of Reddit several times.</p><p>Sadly, while it's rather easy to make a site like this today, I no longer have the WillHost.It source code and archive.org does not have the most up-to-date versions - hence why there are two identical screenshots on this page!</p>",
+	"section2":  {
+					"Platforms":		"Web",
+					"Technologies": 	"PHP, MySQL"
+				 }
+}

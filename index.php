@@ -47,7 +47,7 @@
 <div class="left">
 <img src="assets/me.jpg" class="portrait"/>
 </div>
-<div class="right">
+<div class="right fit-profile">
 <?php echo file_get_contents("includes/aboutme.html"); ?>
 </div>
 </div>
@@ -59,7 +59,7 @@
 <h2>my work</h2>
 </div>
 
-<div class="grid-container grid-cont-tight backdrop">
+<div class="grid-container grid-cont-tight backdrop works-pad">
 <?php include("projects/listProjects.php"); ?>
 </div>
 
