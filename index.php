@@ -10,6 +10,8 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
+<title>Brian LaClair</title>
+
 <link rel="stylesheet" href="style.css">
 
 <script src="//code.jquery.com/jquery-3.6.0.js"></script>
