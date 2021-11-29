@@ -30,8 +30,18 @@ var	emailToggled	= false;
 // Get the offset position of the navbar
 var sticky 		  	= header.offsetTop;
 
+var moveInit 	= false;
+root.className 	= 'noscroll';
+
+
 // When the user scrolls the page, this helps us check if things need to happen, like sticking the navbar
-window.onscroll   = function() {nav_stick();};
+window.onscroll   = function() {
+	nav_stick();
+	if (!moveInit) {
+		moveInit = true;
+		root.className = '';
+	}
+};
 
 // Sticks to top of the screen if we've reached it, unsticks if we're back to it's original position. Also un-hides the "Home" button.
 function nav_stick() {
