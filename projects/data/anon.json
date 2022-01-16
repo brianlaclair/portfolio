@@ -1,0 +1,15 @@
+{
+	"name": 	 "anon-chat",
+	"thumb":	 "anon1.png",
+	"image2":	 "anon2.gif",
+	"image3":	 "Solid_black.png",
+	"title":	 "Solo Developer",
+	"time":		 "January 2022",
+	"shortDes":  "a stand-alone, flat-file, anonymous chat app",
+	"section1":  "<p>Developed on a lazy Saturday afternoon, anon-chat is just a random attempt at an anonymous chat web app.</p><p>It's more or less an API written in PHP, with a front-end that sends requests to the API using JQuery to learn more about it's state, and what it should be doing.</p><p>My two favorite features of this app is that:</p><p>1. Your message color is what tells other users who you are relative to other messages.</p><p>2. You can start a new chatroom with ANY name just by typing it into the address bar.</p>",
+	"section2":  {
+					"Platforms":		"Web",
+					"Technologies": 	"PHP, HTML, CSS, JQuery",
+					"Links":			"<a href='https://github.com/brianlaclair/anon-chat'>project on github</a> / <a href='https://www.brianlaclair.com/experiments/anon-chat/'>example version</a>"
+				 }
+}

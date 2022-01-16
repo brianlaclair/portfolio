@@ -1,0 +1,15 @@
+{
+	"name": 	 "eq.php",
+	"thumb":	 "eq1.png",
+	"image2":	 "eq2.png",
+	"image3":	 "Solid_black.png",
+	"title":	 "Solo Developer",
+	"time":		 "January 2022",
+	"shortDes":  "eq is a function library developed to make outputting HTML a breeze in PHP",
+	"section1":  "<p>eq.php is an open source PHP library that makes it easy to output well-formatted HTML webpages</p><p>I created it to make it really simple to dump gorgeous output without mucking around too much with HTML everyday (as much as I love that), and instead make my life easier with functions.</p><p>It's available on my github, and installable via Composer.</p>",
+	"section2":  {
+					"Platforms":		"Web",
+					"Technologies": 	"PHP",
+					"Links":			"<a href='https://github.com/brianlaclair/eq.php'>source on github</a> / <a href='https://packagist.org/packages/brianlaclair/eq'>packagist link</a>"
+				 }
+}
