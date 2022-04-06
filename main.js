@@ -62,6 +62,18 @@ function nav_stick() {
 function loadOverlayContent(id) {
 	$.ajax("projects/project.php?id=" + id, {
     success: function(response) {
+		// Prevent scrolling
+		root.className = 'noscroll';
+
+		// Blur the page behind the overlay for a "glassy" effect
+		mainContent.classList.add("mainblur");
+		header.classList.add("mainblur");
+
+		// Show the overlay
+		overlay.classList.add("showoverlay");
+		overlay.classList.remove("hideoverlay");
+		overlay.classList.remove("hiddenstart");
+
       $("#overlayimportedcontent").html(response);
     }
   });
@@ -109,18 +121,6 @@ function emailToggle() {
 }
 
 function openModal(id) {
-
-	// Prevent scrolling
-	root.className = 'noscroll';
-
-	// Blur the page behind the overlay for a "glassy" effect
-	mainContent.classList.add("mainblur");
-	header.classList.add("mainblur");
-
-	// Show the overlay
-	overlay.classList.add("showoverlay");
-	overlay.classList.remove("hideoverlay");
-	overlay.classList.remove("hiddenstart");
 
 	//Load in the content
 	loadOverlayContent(id);

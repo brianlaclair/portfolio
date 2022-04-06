@@ -1,0 +1,15 @@
+{
+	"name": 	"Torah Games",
+	"thumb":	"tg_logo.png",
+	"image2":	"openinggame.gif",
+	"image3":	"clickinglink.gif",
+	"title":	"Lead Web Developer",
+	"time":		"January 2022 - Current",
+	"shortDes": "Designing and developing a new e-learning platform and CMS with attached API for integration of games made with Unity, GameMaker, and Javascript",
+	"section1":  "<p>I was brought on by the Torah Games owner in January to lead the creation and development of a rewritten version of their website, including new ways for the website to integrate with existing and future games.</p><p>Torah Games is a site utilized around the world to teach kids both Hebrew and Torah, and they've completely outgrown the WordPress site that they use currently. The custom site that is being developed provides new avenues for teaching with Torah Games through <ul><li>Class organization and managment tools</li><li>Activity and assignment progress tracking</li><li>a custom API that allows teachers to easily modify games with words and phrases that the class or individual student is working on</li></ul></p>",
+	"section2":  {
+					"Platforms":		"Web and Desktop",
+					"Technologies": 	"PHP, MySQL, jQuery, Unity, GameMaker Studio 2",
+					"Responsibilities": "<ul><li>Design, develop, and test platform framework</li><li>Develop website modules in PHP, HTML, CSS, and Javascript</li><li>Design and maintain database schema</li><li>Collaboratively Design, Prototype, and Develop e-learning tools</li><li>Develop and document API functionality for future Torah Game developers</li></ul>"
+				 }
+}
